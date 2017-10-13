@@ -6,12 +6,14 @@ def my_each(array) # put argument(s) here
       yield array[i]
       i = i + 1
     end
+    array
   else
     puts "No block was given!"
+  end
 end
 
 # call your method here!
 collection = [1, 2, 3, 4]
 my_each(collection) do |i|
-  puts 1 
+  puts 1
 end
