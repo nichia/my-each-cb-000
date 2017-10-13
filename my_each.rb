@@ -10,11 +10,8 @@ def my_each(array) # put argument(s) here
     puts "No block was given!"
 end
 
-
-
 # call your method here!
-hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if name.start_with?("T")
-    puts "Hi, #{name}"
-  end
+collection = [1, 2, 3, 4]
+my_each(collection) do |i|
+  puts 1 
 end
